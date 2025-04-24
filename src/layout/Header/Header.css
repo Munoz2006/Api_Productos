@@ -33,3 +33,38 @@
 .header input:focus {
     box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .header input {
+        width: 100%;
+        max-width: 300px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 15px;
+    }
+
+    .header h1 {
+        font-size: 1.2rem;
+    }
+
+    .header input {
+        width: 100%;
+        max-width: 250px;
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+}
