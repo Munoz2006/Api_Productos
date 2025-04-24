@@ -1,3 +1,4 @@
+import './Card.css';
 export const Card = (character) => {
     const {title, price, description, category, image} = character;
 

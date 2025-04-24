@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { Card } from '../../componest/Card/Card';
+import './Home.css';
 
 const URL = 'https://fakestoreapi.com/products';
 
@@ -17,20 +19,13 @@ export const Home = () => {
     return (
      <main>
         <h1>Home</h1>
+        <section>
         {
-            characters.map((character) => {
-                const {id, title, price, description, category, image} = character;
-                return (
-                    <div key={id} className="card">
-                        <img src={image} alt={title} />
-                        <h2>{title}</h2>
-                        <p>{description}</p>
-                        <p>{category}</p>
-                        <p>${price}</p>
-                    </div>
-                )
-            })
+            characters.map( characters =>(
+                <Card key={characters.id} {...characters} />
+            ))
         }
+        </section>
      </main>
     )
 }
