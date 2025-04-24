@@ -1,10 +1,35 @@
-.header{
+.header {
     width: 90%;
     display: flex;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
+    align-items: center;
     background-color: #282c34;
-    padding: 20px;
+    padding: 20px 40px;
     color: white;
-    border-radius: 0rem 0rem 1rem 1rem;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+}
+
+.header input {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    width: 250px;
+    transition: box-shadow 0.3s ease;
+}
+
+.header input:focus {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
